@@ -1,0 +1,53 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffccd5;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+}
+
+/* Valentine's Card */
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    max-width: 400px;
+    text-align: center;
+    animation: pop 1s ease-in-out;
+}
+
+/* Header styling */
+h1 {
+    color: #d63384;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Message text */
+p {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Heart styling */
+.heart {
+    color: red;
+    font-size: 50px;
+    animation: heartbeat 1.5s infinite;
+}
+
+/* Keyframes for popping effect */
+@keyframes pop {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Keyframes for heartbeat animation */
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
